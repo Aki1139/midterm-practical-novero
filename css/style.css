@@ -255,3 +255,31 @@ footer {
         grid-column: 1 / -1;
     }
 }
+/* Artwork Gallery Styling */
+.artwork-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    margin-top: var(--space-sm);
+}
+
+.artwork-gallery figure {
+    margin: 0;
+}
+
+.artwork-gallery figcaption {
+    font-size: var(--font-size-sm);
+    color: var(--color-primary);
+    margin-top: var(--space-xs);
+    font-style: italic;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .artwork-gallery {
+        flex-direction: row;
+    }
+    .artwork-gallery figure {
+        flex: 1;
+    }
+}
